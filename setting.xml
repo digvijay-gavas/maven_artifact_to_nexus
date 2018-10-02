@@ -12,7 +12,7 @@
      <mirror>
        <id>maven</id>
        <mirrorOf>*</mirrorOf>
-        <url>http://repo1.maven.org/maven2/</url>
+        <url>http://repo1.maven.org/maven2</url>
       </mirror>
   </mirrors>
   <activeProfiles>
@@ -26,6 +26,16 @@
       <!--Override the repository (and pluginRepository) "central" from the Maven Super POM
           to activate snapshots for both! -->
       <repositories>
+         <repository>
+                <id>maven</id>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+                <url>http://repo1.maven.org/maven2</url>
+            </repository>
         <repository>
           <id>central</id>
           <url>http://central</url>
