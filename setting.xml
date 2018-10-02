@@ -9,10 +9,16 @@
       <mirrorOf>*</mirrorOf>
       <url>http://localhost:8081/nexus/content/groups/public</url>
     </mirror>
+     <mirror>
+       <id>maven</id>
+       <mirrorOf>*</mirrorOf>
+        <url>http://repo1.maven.org/maven2/</url>
+      </mirror>
   </mirrors>
   <activeProfiles>
     <!--make the profile active all the time -->
     <activeProfile>nexus</activeProfile>
+    <activeProfile>maven</activeProfile>
   </activeProfiles>
   <profiles>
     <profile>
