@@ -1,36 +1,16 @@
 <settings>
-  <!-- the path to the local repository - defaults to ~/.m2/repository
-  -->
-  <!-- <localRepository>/path/to/local/repo</localRepository>
-  -->
-    <mirrors>
-
-    <mirror>
-      <id>nexus</id>
-      <name>NEXUS</name>
-      <url>http://localhost:8081/repository/maven-public</url>
-      <mirrorOf>*</mirrorOf>
-    </mirror>
-
-<!--<mirror>
-      <id>public</id>
-      <name>PlanetMirror Australia</name>
-      <url>https://repo.maven.apache.org/maven2</url>
-      <mirrorOf>central</mirrorOf>
-    </mirror>
--->
-  </mirrors>
-  <activeProfiles>
-    <!--make the profile active all the time -->
-<activeProfile>nexus</activeProfile>
-  </activeProfiles>
-  <profiles>
-  </profiles>
-
+  <!-- <localRepository>/path/to/local/repo</localRepository>  -->
+	<mirrors>
+		<mirror>
+			<id>public</id>
+			<name>PlanetMirror Australia</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<mirrorOf>central</mirrorOf>
+		</mirror>
+	</mirrors>
   <pluginGroups>
     <pluginGroup>org.sonatype.plugins</pluginGroup>
   </pluginGroups>
-
   <servers>
     <server>
       <id>nexus</id>
