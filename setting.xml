@@ -8,14 +8,14 @@
 			<mirrorOf>central</mirrorOf>
 		</mirror>
 	</mirrors>
-  <pluginGroups>
-    <pluginGroup>org.sonatype.plugins</pluginGroup>
-  </pluginGroups>
-  <servers>
-    <server>
-      <id>nexus</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>
-  </servers>
+	<pluginGroups>
+		<pluginGroup>org.sonatype.plugins</pluginGroup>
+	</pluginGroups>
+	<servers>
+		<server>
+			<id>nexus</id>
+			<username>admin</username>
+			<password>admin123</password>
+		</server>
+	</servers>
 </settings>
