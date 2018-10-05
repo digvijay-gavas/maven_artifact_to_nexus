@@ -1,0 +1,43 @@
+<settings>
+  <!-- <localRepository>/path/to/local/repo</localRepository>  -->
+	<mirrors>
+		<mirror>
+			<id>central-no-ssl</id>
+			<name>Central without ssl</name>
+			<url>http://repo.maven.apache.org/maven2</url>
+			<mirrorOf>central</mirrorOf>
+		</mirror>
+	</mirrors>
+	<pluginGroups>
+		<pluginGroup>org.sonatype.plugins</pluginGroup>
+	</pluginGroups>
+	<servers>
+		<server>
+			<id>nexus</id>
+			<username>admin</username>
+			<password>admin123</password>
+		</server>
+	</servers>
+	<proxies>
+	<proxy>
+      <id>optional1</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <username>qxq3419</username>
+      <password>#turing1</password>
+      <host>localhost</host>
+      <port>8080</port>
+      <nonProxyHosts>localhost</nonProxyHosts>
+    </proxy>
+	<proxy>
+      <id>optional2</id>
+      <active>true</active>
+      <protocol>https</protocol>
+      <username>qxq3419</username>
+      <password>#turing1</password>
+      <host>localhost</host>
+      <port>8080</port>
+      <nonProxyHosts>localhost</nonProxyHosts>
+    </proxy>
+  </proxies>
+</settings>
